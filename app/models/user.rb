@@ -13,4 +13,6 @@ class User < ApplicationRecord
     format: { with: /\A(?=.*?[a-zA-Z])(?=.*?\d)\w+\z/ }
   
   has_secure_password
+  
+  has_many :topics
 end
